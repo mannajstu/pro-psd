@@ -31,8 +31,9 @@ h1 span {
 
 header {
     background-image: url('../images/banner.png');
-
-    background-size: cover;
+    background-size: 100% 100%;
+    position: relative;
+    background-repeat: no-repeat;
 }
 
 header .row {
@@ -47,7 +48,7 @@ header .row {
     color: white;
     font-size: 18px;
     font-weight: 600;
-
+    text-transform: uppercase;
     position: relative;
     padding: 22px 10px;
     transition: all .3s;
@@ -127,4 +128,151 @@ header .row {
     color: white;
 
     border: 1px solid #579aab;
+}
+
+.banner-content h1 {
+    text-transform: uppercase;
+    color: #579aab;
+}
+
+.banner-content h1 span {
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.social-link {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social-link li {
+    margin-bottom: 4px;
+}
+
+.social-link li a {
+    background-color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    transition-duration: .3s;
+}
+
+.social-link li a:hover {
+    background-color: #65bed6;
+}
+
+.social-link li a i {
+    color: gray;
+}
+
+.social-link li span {
+    color: white;
+    display: inline-block;
+
+    transform: translate(-22px, 30px) rotate(-90deg);
+    ;
+    -webkit-transform: translate(-22px, 30px) rotate(-90deg);
+    ;
+    -moz-transform: translate(-22px, 30px) rotate(-90deg);
+    ;
+    -ms-transform: translate(-22px, 30px) rotate(-90deg);
+    ;
+    -o-transform: translate(-22px, 30px) rotate(-90deg);
+    ;
+}
+
+.skill-section {
+    padding: 30px 0;
+}
+
+.heading h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    position: relative;
+    color: #65bfd6;
+    font-weight: 800;
+    padding-bottom: 34px;
+}
+
+.heading h2 span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    color: #3233301a;
+    font-size: 87px;
+    bottom: 0;
+}
+
+.skill-section h4 {
+    color: #65bfd6;
+    font-weight: 800;
+}
+
+.hvr {
+    position: relative;
+}
+
+.hvr a {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    transition-duration: .3s;
+    opacity: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.hvr:hover a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.hvr::after {
+    width: 0;
+    transition: all .3s;
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    position: absolute;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.hvr:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    background-color: #0c1213ad;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
 }
