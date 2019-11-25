@@ -206,7 +206,7 @@ header .row {
     width: 100%;
     z-index: -1;
     color: #3233301a;
-    font-size: 87px;
+    font-size: 74px;
     bottom: 0;
 }
 
@@ -275,4 +275,84 @@ header .row {
     -moz-transform: scale(.8);
     -ms-transform: scale(.8);
     -o-transform: scale(.8);
+}
+
+.resume-section {}
+
+.resume-section h5 {
+    font-size: 22px;
+    color: #bbb69f;
+    padding: 32px 0;
+}
+
+.resume-box {
+    position: relative;
+    padding: 20px 32px;
+}
+
+.resume-box::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #65bfd6;
+    position: absolute;
+    top: 0;
+    left: 9px;
+}
+
+.resume-box:hover::after {
+    content: '';
+}
+
+.resume-box::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #65bfd6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.resume-box:hover::before {
+    content: '';
+}
+
+.resume-box .resume {
+    padding: 20px 0;
+    transition: all .3s;
+    width: 100%;
+}
+
+.resume-box:hover .resume {
+    border: 1px solid #65bfd6;
+    padding: 20px 20px;
+    box-shadow: 0 0 5px #65bfd6;
+    border-bottom-right-radius: 52px;
+    width: 100%;
+}
+
+.resume-box .resume h4 {}
+
+.resume-box:hover .resume h4 {}
+
+.resume-box .resume h3 {}
+
+.resume-box:hover .resume h3 {}
+
+.resume-box .resume span {}
+
+.resume-box:hover .resume span {}
+
+.resume-box .resume p {
+    margin-bottom: 0;
+}
+
+.resume-box:hover .resume p {}
+
+footer {
+    background-color: #7dc9dc;
+    color: #fff;
+    padding: 20px 0;
 }
