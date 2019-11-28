@@ -326,11 +326,11 @@ header .row {
 }
 
 .resume-box:hover .resume {
-    border: 1px solid #65bfd6;
     padding: 20px 20px;
     box-shadow: 0 0 5px #65bfd6;
     border-bottom-right-radius: 52px;
     width: 100%;
+    background-image: url(../images/education_img.png);
 }
 
 .resume-box .resume h4 {}
